@@ -1,5 +1,10 @@
 # urlchecker
 
+A simple url checker for finding fraud url(s) or nearest url while being fast (threading) 
+
+![Crates.io](https://img.shields.io/crates/v/urlchecker?style=flat-square)
+![docs.rs](https://img.shields.io/docsrs/urlchecker?style=flat-square)
+
 Eg:-
 
 ```rust
@@ -39,3 +44,8 @@ Some(
 )
 
 ```
+
+Inspired from:
+
+- https://norvig.com/spell-correct.html
+- https://github.com/past/spellcheck
