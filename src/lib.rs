@@ -72,10 +72,10 @@ impl URL {
     /// The edits can be deletions, insertions, alterations or transpositions all processed in parallel.
     fn edits(&mut self, word: &str) -> Vec<String> {
         let mut results = Vec::new();
-        let mut deletion_results = Vec::new();
-        let mut transposition_results = Vec::new();
-        let mut alteration_results = Vec::new();
-        let mut insertion_results = Vec::new();
+        let mut deletion_results = Vec::with_capacity(word.len());
+        let mut transposition_results = Vec::with_capacity(word.len() - 1);
+        let mut alteration_results = Vec::with_capacity(self.letters.len() * word.len());
+        let mut insertion_results = Vec::with_capacity(self.letters.len() * (word.len() + 1));
 
         thread::scope(|s| {
             // deletion

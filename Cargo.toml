@@ -1,6 +1,6 @@
 [package]
 name = "urlchecker"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 authors = ["sn99 <siddharthn.099@gmail.com>"]
 description = "A simple url checker for finding fraud url(s) or nearest url"
