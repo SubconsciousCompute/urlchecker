@@ -1,6 +1,14 @@
 # urlchecker
 
-A simple url checker for finding fraud url(s) or nearest url while being fast (threading) 
+A simple url checker for finding fraud url(s) or nearest url while being fast (threading)
+
+A spell-checker based on the statistical algorithm described by Peter Norvig
+in <http://norvig.com/spell-correct.html>.
+
+Usage requires a two-step process:
+
+1) Call `url.train()` one or more times with a large text to train the language model
+2) Call `url.correct(word)` to retrieve the correction for the specified URL if it exists
 
 ![Crates.io](https://img.shields.io/crates/v/urlchecker?style=flat-square)
 ![docs.rs](https://img.shields.io/docsrs/urlchecker?style=flat-square)
@@ -30,6 +38,7 @@ fn main() {
 ```
 
 Output:-
+
 ```
 URL {
     letters: "1234567890._-@abcdefghijklmnopqrstuvwxyz",
