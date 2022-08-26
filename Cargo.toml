@@ -1,13 +1,13 @@
 [package]
 name = "urlchecker"
-version = "0.1.0"
+version = "0.3.0"
 edition = "2021"
 authors = ["sn99 <siddharthn.099@gmail.com>"]
 description = "A simple url checker for finding fraud url(s) or nearest url"
 repository = "https://github.com/sn99/urlchecker"
 license = "MIT"
 readme = "README.md"
-keywords = ["checker", "url", "security"]
+keywords = ["checker", "url", "security", "spelling", "grammar"]
 documentation = "https://docs.rs/urlchecker"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
